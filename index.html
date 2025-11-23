@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxhead-Style Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Boxhead-Style Survival Prototype</h1>
+    <section class="info">
+      <p>Move with <strong>WASD</strong>, aim with the mouse, and shoot with <strong>left click</strong> or <strong>space</strong>. Stay alive as long as possible against incoming zombies. Collect weapon crates for temporary upgrades.</p>
+      <ul>
+        <li>Base weapon: pistol (medium fire rate).</li>
+        <li>Crates grant an assault rifle (fast fire) or shotgun (spread) for 12 seconds.</li>
+        <li>Enemies get tougher over time—keep moving!</li>
+      </ul>
+    </section>
+    <canvas id="game" width="900" height="600" aria-label="Boxhead style game area"></canvas>
+    <section class="status" aria-live="polite">
+      <div>Health: <span id="health">100</span></div>
+      <div>Score: <span id="score">0</span></div>
+      <div>Weapon: <span id="weapon">Pistol</span></div>
+      <div>Upgrade Time Left: <span id="upgrade-time">0s</span></div>
+    </section>
+  </main>
+  <script src="src/main.js"></script>
+</body>
+</html>
